@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Background Generator</h1>
+        <div class="controls">
+            <label for="color1">Color 1:</label>
+            <input type="color" id="color1" name="color1" value="#ff0000">
+
+            <label for="color2">Color 2:</label>
+            <input type="color" id="color2" name="color2" value="#0000ff">
+
+            <label for="color3">Color 3 (Optional):</label>
+            <input type="color" id="color3" name="color3" value="#00ff00">
+
+            <label for="gradientType">Gradient Type:</label>
+            <select id="gradientType">
+                <option value="linear">Linear</option>
+                <option value="radial">Radial</option>
+                <option value="conic">Conic</option>
+                <option value="repeating-linear">Repeating Linear</option>
+                <option value="repeating-radial">Repeating Radial</option>
+            </select>
+        </div>
+
+        <div class="preview" id="backgroundPreview"></div>
+
+        <button id="copyCssBtn">Copy CSS</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
